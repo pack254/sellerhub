@@ -1,0 +1,41 @@
+.create-new-product{
+    margin-bottom:20px;
+}
+
+.box{
+  margin-top: 20px;
+}
+
+#example1_paginate{
+  text-align:left !important;
+}
+
+
+.fa-check{
+    display:inline-block !important;
+}
+
+.update-sucess{
+  margin:0px !important;
+}
+
+#example2_paginate{
+  float:left;
+}
+
+#example2_filter{
+  text-align: left;
+}
+
+.form-group > input{
+  background-color:#e5e5e5 !important;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+}
+
+.modal-product{
+  width:780px;
+}
