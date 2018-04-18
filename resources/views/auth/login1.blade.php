@@ -35,7 +35,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">Sign In</p>
 
     <form action="../../index2.html" method="post">
       <div class="form-group has-feedback">

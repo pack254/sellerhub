@@ -6,9 +6,7 @@
  */
 
 require('./bootstrap');
-
 window.Vue = require('vue');
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,18 +14,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('file-preview',  require('./components/FilePreview.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
-
-//add custom js
-$('.sidebar-toggle').on('click',function(){
-
-           var cls =  $('body').hasClass('sidebar-collapse');
-           if(cls == true){
-                $('body').removeClass('sidebar-collapse');
-           } else {
-                $('body').addClass('sidebar-collapse');
-           }
-});
+  const app = new Vue({
+      el: '#preview'
+  });

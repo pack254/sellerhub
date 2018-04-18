@@ -27,7 +27,7 @@
   <!-- DataTables -->
   <link rel="stylesheet" href="{{asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body id="body" class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -467,10 +467,14 @@
   <div class="control-sidebar-bg"></div>
   <div id='app'></div>
 </div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
 <!-- ./wrapper -->
 <!-- javascriptfile -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -482,6 +486,8 @@
 <script src="{{asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <!-- FastClick -->
 <script src="{{asset('bower_components/fastclick/lib/fastclick.js')}}"></script>
+
+
 
 <!-- page script -->
 @if(Route::getCurrentRoute()->uri() == 'CustomerList')

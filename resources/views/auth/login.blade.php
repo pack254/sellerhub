@@ -26,7 +26,8 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg"><b>Already have account?</b></p>
+      <p class="login-box-msg">Sign In</p>
 
       <form action="../../index2.html" method="post">
         {{ csrf_field() }}

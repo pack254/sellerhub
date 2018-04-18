@@ -38,7 +38,7 @@ return [
     'facebook' => [
     'client_id' => '140986459866839',
     'client_secret' => '0096341b8650c260f84072c95157280a',
-    'redirect' => 'http://localhost:8000/callback',
+    'redirect' => 'http://sellerhub.test/callback',
     ],
 
 ];

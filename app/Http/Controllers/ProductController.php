@@ -149,7 +149,7 @@ class ProductController extends Controller
      */
     public function update(Request $request)
     {
-      
+
         $validator = Validator::make(Input::all(),[
           'pname' => 'required|max:200',
           'pphoto' => 'mimes:jpeg,jpg,png,gif|file|image',

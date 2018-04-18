@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2 create-product-cover">
             <div class="panel panel-default">
                 <div class="panel-heading">ลงสินค้าใหม่</div>
                 @if (\Session::has('success'))
@@ -12,7 +12,7 @@
                 </div><br />
                 @endif
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ url('products') }}" enctype="multipart/form-data">
+                    <form class="form-horizontal" method="POST" action="route('addProduct');" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('productCode') ? ' has-error' : '' }}">
@@ -43,6 +43,8 @@
                             </div>
                         </div>
 
+
+
                         <div class="form-group{{ $errors->has('productDetail') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">รายระเอียดสินค้า</label>
 
@@ -59,8 +61,8 @@
 
                         <div class="form-group{{ $errors->has('productImage') ? ' has-error' : '' }}">
                             <label for="password-confirm" class="col-md-4 control-label">รูปภาพ</label>
-                            <div class="col-md-4">
-                              <input class="file-image" type="file" id="form-file" name="productImage" class="" />
+                            <div id="preview" class="col-md-4">
+                              <file-preview></file-preview>
 
                               @if ($errors->has('productImage'))
                                   <span class="help-block">
@@ -98,7 +100,6 @@
 
                         <div class="form-group{{ $errors->has('productQuantity') ? ' has-error' : '' }}">
                             <label for="password-confirm" class="col-md-4 control-label">จำนวนสิ้นค้า</label>
-
                             <div class="col-md-6">
                                 <input id="password-confirm" type="text" class="form-control" name="productQuantity" required>
                                 @if ($errors->has('productQuantity'))
